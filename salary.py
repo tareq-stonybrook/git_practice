@@ -1,12 +1,10 @@
 gross = float(input('Enter your salary: '))
-tax_rate = 0.27
-
-tax = gross * tax_rate
-take_home = gross - tax
-
-if gross > 0:
-    print('Gross salary:', gross)
-    print('Tax amount:', tax)
-    print('Take-home pay:', take_home)
-else:
-    print('Salary must be greater than 0')
+hours = float(input('Enter the number of hours worked: '))
+tax_rate = float(input('Enter the tax rate (as a decimal): '))
+gross_pay = gross * hours
+tax_amount = gross_pay * tax_rate
+take_home_pay = gross_pay - tax_amount
+if gross_pay > 0:
+    print("total pay:",take_home_pay)
+if gross_pay <= 0:
+    print("total pay must be greater than 0")
