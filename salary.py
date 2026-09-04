@@ -6,5 +6,6 @@ tax_amount = gross_pay * tax_rate
 take_home_pay = gross_pay - tax_amount
 if gross_pay > 0:
     print("total pay:",take_home_pay)
+    print("bi-weekly pay:", take_home_pay *2)
 if gross_pay <= 0:
     print("total pay must be greater than 0")
